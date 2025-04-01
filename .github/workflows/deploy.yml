@@ -25,11 +25,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install R
-      - name: Install R
+      # Install system dependencies for R and rpy2
+      - name: Install system dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y r-base
+          sudo apt-get install -y r-base libtirpc-dev gcc g++ python3-dev
 
       # Set R_HOME environment variable
       - name: Set R_HOME
