@@ -1,0 +1,80 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: book/Misc/overview
+parts:
+- caption: Evaluation Research Seminar
+  chapters:
+    - file: book/Seminar/Introduction
+      title: Seminar Overview
+    - file: book/Seminar/ANOVA_and_ANCOVA/0_Introduction
+      title: ANOVA and ANCOVA
+      sections:
+        - file: book/Seminar/ANOVA_and_ANCOVA/1_1-way_ANOVA_between_sub
+          title: One-Way ANOVA Between-Subjects
+        - file: book/Seminar/ANOVA_and_ANCOVA/2_1-way_ANOVA_within_sub
+          title: One-Way ANOVA Within-Subjects
+        - file: book/Seminar/ANOVA_and_ANCOVA/3_2-way_ANOVA_between_sub
+          title: Two-Way ANOVA Between-Subjects
+        - file: book/Seminar/ANOVA_and_ANCOVA/ANCOVA
+          title: ANCOVA
+    - file: book/Seminar/MLM_and_CSM/0_Introduction
+      title: MLM and CSM
+      sections:
+        - file: book/Seminar/MLM_and_CSM/1_Working_example
+          title: Working Example
+        - file: book/Seminar/MLM_and_CSM/2_Repeated_ANOVA
+          title: Repeated Measures ANOVA
+        - file: book/Seminar/MLM_and_CSM/3_Multi-Level_Model_(MLM)_of_change
+          title: Multi-Level Model (MLM) of Change
+        - file: book/Seminar/MLM_and_CSM/4_Change_Score_Model
+          title: Change Score Model (CSM)
+        - file: book/Seminar/MLM_and_CSM/5_Change_Score_Model_with_One_Cov
+          title: Change Score Model with One Covariate
+        - file: book/Seminar/MLM_and_CSM/6_Change_Score_Model_with_More_Cov
+          title: Change Score Model with More than One Covariate
+    - file: book/Seminar/LSCM_and_GCM/0_Introduction
+      title: LSCM and GCM
+      sections:
+        - file: book/Seminar/LSCM_and_GCM/1_Latent_change_score_models
+          title: Latent Change Score Models (LSCMs)
+        - file: book/Seminar/LSCM_and_GCM/2_Multi-method_latent_change_score_models
+          title: Multi-Method/group/trait Latent Change Score Models (GCMs)
+        - file: book/Seminar/LSCM_and_GCM/3_Growth_curve_models
+          title: Growth Curve Models (GCMs)
+    - file: book/Seminar/EffectLiteR/0_Introduction
+      title: EffectLiteR
+      sections:
+        - file: book/Seminar/EffectLiteR/1_Data_Exploration
+          title: Data Exploration
+        - file: book/Seminar/EffectLiteR/2_EffectLiteR_app
+          title: EffectLiteR App
+        - file: book/Seminar/EffectLiteR/3_Analysis_with_EffectLiteR
+          title: Analysis with EffectLiteR
+    - file: book/Seminar/PSM/0_Introduction
+      title: PSM
+      sections:
+        - file: book/Seminar/PSM/1_Working_example
+          title: Data exploration
+        - file: book/Seminar/PSM/2_Propensity_score_matching
+          title: PSM
+    - file: book/Seminar/Meta_Analysis/0_Introduction
+      title: Meta-Analysis
+      sections:
+        - file: book/Seminar/Meta_Analysis/1_Working_example
+          title: Data exploration
+        - file: book/Seminar/Meta_Analysis/2_First_meta-analysis
+          title: Meta-Analysis
+        - file: book/Seminar/Meta_Analysis/3_Meta-analytic_methods_features
+          title: Meta-analytic methods and features
+- caption: Evaluation Research Lecture
+  chapters:
+    - file: book/Lecture/Introduction
+      title: Lecture Overview
+- caption: Additional Materials
+  chapters:
+    - file: book/Misc/Reading
+      title: Additional Reading Materials
+    - file: book/Solutions/solutions
+      title: Solutions

@@ -1,0 +1,43 @@
+title: PSY112-EvaluationResearch
+author: Daniel Kristanto
+logo: logo.png
+copyright: 2025
+
+# Useful reference for creating the config: https://jupyterbook.org/en/stable/customize/config.html
+
+# Do not execute notebooks
+execute:
+  execute_notebooks: "auto"
+  #exclude_patterns: ["*.ipynb"]
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - book/references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/kristantodan12/psy112-ER
+  branch: main
+
+# Add GitHub buttons to your book
+html:
+  home_page_in_navbar: false
+  use_issues_button: true
+  use_repository_button: true
+  baseurl: https://github.com/kristantodan12/psy112-ER
+  extra_css:
+    - _static/custom.css
+
+# Google colab launch button
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
+# Make the book's default style dark
+sphinx:
+  html_context:
+    default_mode: dark

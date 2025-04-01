@@ -1,0 +1,21 @@
+digraph G {
+	overlap=scale splines=true
+	edge [fontsize=12]
+	node [fillcolor="#cae6df" shape=circle style=filled]
+	Iw [label=Iw]
+	Sw [label=Sw]
+	node [shape=box style=""]
+	t1 [label=t1]
+	t2 [label=t2]
+	t3 [label=t3]
+	t4 [label=t4]
+	Iw -> t1 [label=1.000]
+	Sw -> t1 [label=0.000]
+	Iw -> t2 [label=1.000]
+	Sw -> t2 [label=1.000]
+	Iw -> t3 [label=1.000]
+	Sw -> t3 [label=2.000]
+	Iw -> t4 [label=1.000]
+	Sw -> t4 [label=3.000]
+	Sw -> Iw [label="-0.008\np-val: 0.13" dir=both style=dashed]
+}
