@@ -17,7 +17,7 @@ parts:
           title: One-Way ANOVA Within-Subjects
         - file: book/Seminar/ANOVA_and_ANCOVA/3_2-way_ANOVA_between_sub
           title: Two-Way ANOVA Between-Subjects
-        - file: book/Seminar/ANOVA_and_ANCOVA/ANCOVA
+        - file: book/Seminar/ANOVA_and_ANCOVA/4_ANCOVA
           title: ANCOVA
     - file: book/Seminar/MLM_and_CSM/0_Introduction
       title: MLM and CSM
