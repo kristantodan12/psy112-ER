@@ -8,7 +8,7 @@ copyright: 2025
 # Do not execute notebooks
 execute:
   execute_notebooks: "auto"
-  #exclude_patterns: ["*.ipynb"]
+  exclude_patterns: ["book/Seminar/LSCM_and_GCM/1_Latent_change_score_models.ipynb"]
 
 # Define the name of the latex output file for PDF builds
 latex:
