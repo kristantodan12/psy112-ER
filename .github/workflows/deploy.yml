@@ -47,7 +47,6 @@ jobs:
       # Set up Jupyter Kernel
       - name: Set up Jupyter Kernel
         run: |
-          pip install ipykernel
           python -m ipykernel install --user --name=psy112 --display-name "Python (psy112)"
 
       # Build the book
