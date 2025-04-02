@@ -32,7 +32,7 @@ jobs:
 
       # Set R_HOME environment variable
       - name: Set R_HOME
-        run: echo "R_HOME=/usr/lib/R" >> $GITHUB_ENV
+        run: echo "R_HOME=$(R RHOME)" >> $GITHUB_ENV
 
       # Install Python and dependencies
       - name: Set up Python 3.9.18
