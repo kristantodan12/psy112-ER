@@ -11,5 +11,4 @@ rpy2
 pingouin
 statsmodels
 semopy
-ipykernel
 
