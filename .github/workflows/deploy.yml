@@ -1,13 +1,15 @@
 name: deploy-book
 
 on:
-  # Trigger the workflow on push to main branch
+  # Trigger the workflow on push events to the main branch
   push:
     branches:
       - main
 
 env:
   BASE_URL: /${{ github.event.repository.name }}
+  CONDA_ENV_NAME: psy112ER
+  PYTHON_VERSION: 3.11
 
 concurrency:
   group: "pages"
@@ -22,40 +24,57 @@ jobs:
     environment:
       name: github-pages 
     steps:
-      - uses: actions/checkout@v3
+      # 1. Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Set up Miniconda
+      # 2. Set up Miniconda
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v2
         with:
           auto-update-conda: true
-          python-version: 3.11
-          environment-file: environment.yml
-          activate-environment: psy112ER
+          python-version: ${{ env.PYTHON_VERSION }}
 
-      # Verify Conda environment
-      - name: Check Conda Environment
+      # 3. Create Conda Environment and Install Dependencies
+      - name: Create and Install Conda Environment
+        shell: bash -l {0}
         run: |
-          conda info
-          conda list
+          echo "Creating Conda environment ${{ env.CONDA_ENV_NAME }} with Python ${{ env.PYTHON_VERSION }}"
+          conda create -n ${{ env.CONDA_ENV_NAME }} python=${{ env.PYTHON_VERSION }} -y
 
-      # Install additional dependencies from requirements.txt
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+          echo "Activating Conda environment ${{ env.CONDA_ENV_NAME }}"
+          eval "$(conda shell.bash hook)"
+          conda activate ${{ env.CONDA_ENV_NAME }}
 
-      # Build the book
+          echo "Configuring Conda channels (conda-forge and defaults)"
+          conda config --add channels conda-forge
+          conda config --set channel_priority strict
+
+          echo "Installing Conda packages (r-base, jupyter, jupyter-book, ipykernel)"
+          conda install -y r-base jupyter jupyter-book ipykernel
+
+          if [ -f requirements.txt ]; then
+            echo "Installing pip packages from requirements.txt"
+            pip install -r requirements.txt
+          else
+            echo "requirements.txt not found, skipping pip install step."
+          fi
+
+      # 4. Build the Jupyter Book
       - name: Build the book
+        shell: bash -l {0}
         run: |
+          eval "$(conda shell.bash hook)"
+          conda activate ${{ env.CONDA_ENV_NAME }}
           jupyter-book build .
 
-      # Upload the book's HTML as an artifact
+      # 5. Upload the book's HTML as an artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: "_build/html"
 
-      # Deploy the book's HTML to GitHub Pages
+      # 6. Deploy the book to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
