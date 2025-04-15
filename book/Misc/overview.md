@@ -14,7 +14,7 @@ kernelspec:
 
 # Welcome to psy112 - Evaluation Reseach!
 
-This book contains the course content for the Evaluation Reserach (psy112) lecture and seminar. For the lecture, you will find supplementary information to complement the lecture slides. For the seminar, it will focus on the practical application of statistical concepts in Python. For the introduction of Python and its associated tools, please refer to the book for Multivariate Statistics (psy11).
+This book contains the course content for the Evaluation Reserach (psy112) lecture and seminar. For the lecture, you will find supplementary information to complement the lecture slides. For the seminar, it will focus on the practical application of statistical concepts in Python. To be able to run the scripts in this course, please create a conda environment or use the previously created environment for psy126 course.
 
 ::::{grid} 1 1 2 3
 :class-container: text-center
@@ -23,7 +23,7 @@ This book contains the course content for the Evaluation Reserach (psy112) lectu
 :::{grid-item-card}
 :class-body: text-center
 :class-header: bg-dark text-center
-:link: https://github.com/mibur1/psy111
+:link: https://leonardozaggia.github.io/psy126/book/introduction/1_psy126/1_Setup.html
 :link-type: url
 Setting things up 🚀
 ^^^
@@ -31,7 +31,7 @@ Setting things up 🚀
 :height: 100
 ```
 +++
-Go to psy111 book {fas}`arrow-right`
+Go to psy126 book {fas}`arrow-right`
 :::
 
 

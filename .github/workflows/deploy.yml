@@ -24,30 +24,25 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Install system dependencies for R and rpy2
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y r-base libtirpc-dev gcc g++ python3-dev
-
-      # Set R_HOME environment variable
-      - name: Set R_HOME
-        run: echo "R_HOME=$(R RHOME)" >> $GITHUB_ENV
-
-      # Install Python and dependencies
-      - name: Set up Python 3.9.18
-        uses: actions/setup-python@v4
+      # Set up Miniconda
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: 3.9.18
+          auto-update-conda: true
+          python-version: 3.11
+          environment-file: environment.yml
+          activate-environment: psy112ER
 
+      # Verify Conda environment
+      - name: Check Conda Environment
+        run: |
+          conda info
+          conda list
+
+      # Install additional dependencies from requirements.txt
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-
-      # Set up Jupyter Kernel
-      - name: Set up Jupyter Kernel
-        run: |
-          python -m ipykernel install --user --name=psy112 --display-name "Python (psy112)"
 
       # Build the book
       - name: Build the book
