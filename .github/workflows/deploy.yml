@@ -67,6 +67,15 @@ jobs:
           eval "$(conda shell.bash hook)"
           conda activate ${{ env.CONDA_ENV_NAME }}
           jupyter-book build .
+        continue-on-error: true
+      
+      # Check if the previous step failed
+      - name: Check build status
+        if: failure()
+        run: |
+          echo "Execution failed. Falling back to 'off' version."
+          sed -i 's/execute_notebooks: "force"/execute_notebooks: "off"/' _config.yml
+          jupyter-book build .
 
       # 5. Upload the book's HTML as an artifact
       - name: Upload artifact
