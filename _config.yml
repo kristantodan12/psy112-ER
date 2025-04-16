@@ -33,8 +33,9 @@ html:
   use_issues_button: true
   use_repository_button: true
   baseurl: https://github.com/kristantodan12/psy112-ER
-  extra_css:
-    - _static/custom.css
+  static_path: ["_static"] 
+  #extra_static_paths:
+  #  - book/Misc
 
 # Google colab launch button
 launch_buttons:
