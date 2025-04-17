@@ -12,11 +12,11 @@ parts:
       title: ANOVA and ANCOVA
       sections:
         - file: book/Seminar/ANOVA_and_ANCOVA/1_1-way_ANOVA_between_sub
-          title: One-Way ANOVA Between-Subjects
+          title: One-Way ANOVA Between-Person
         - file: book/Seminar/ANOVA_and_ANCOVA/2_1-way_ANOVA_within_sub
-          title: One-Way ANOVA Within-Subjects
+          title: One-Way ANOVA Within-Person
         - file: book/Seminar/ANOVA_and_ANCOVA/3_2-way_ANOVA_between_sub
-          title: Two-Way ANOVA Between-Subjects
+          title: Two-Way ANOVA Between-Person
         - file: book/Seminar/ANOVA_and_ANCOVA/4_ANCOVA
           title: ANCOVA
     - file: book/Seminar/MLM_and_CSM/0_Introduction
