@@ -14,11 +14,11 @@ kernelspec:
 
 # ANOVA and ANCOVA
 
-In our first evaluation research practical session, we will cover the basics of analyzing data gathered using various experimental designs. We will apply analysis of variance (ANOVA) and analysis of covariance (ANCOVA) models. You should already be familiar with these methods from your Bachelor studies. We recap these basic models in order to reinforce the foundation for understanding why these models are, in many cases, not appropriate for analyzing data collected in applied experimental research. 
+In this first session of the practical part of the evaluation research seminar, we will cover the basics of analyzing data collected using various experimental designs. We will apply analysis of variance (ANOVA) and analysis of covariance (ANCOVA) models. You should already be familiar with these methods from your Bachelor studies. We recap the basic principles of these models in order to reinforce the foundation for understanding why these models are, in many cases, not appropriate for analyzing data collected in applied experimental research. We aim to summarize four types of models and this may be too much for the class. We will go slowly and the chapters we do not manage to cover will remain your homework. Please note that it is crucial to review these topics in order to be able to follow the new topics of the seminar. 
 
 In general, the practical sessions will cover explanations, code examples and you will be required to complete brief exercises. We will go through the answers together.
 
-Enjoy it!
+Enjoy!
 
 ## Introduction Slide
 
@@ -31,7 +31,7 @@ Enjoy it!
 
 ## Environment Setup
 
-For this practical session (psy112), we will use the Conda environment you previously set up for psy126 as a base. You can find the original setup instructions for reference here:
+For this practical session (psy112), we will use the Conda environment you previously set up for the psy126 module as a base. You can find the original setup instructions for reference here:
 [psy126 Setup Guide](https://leonardozaggia.github.io/psy126/book/introduction/1_psy126/1_Setup.html)
 
 We need to install a few additional packages specifically for this course, which provide tools for advanced statistical analysis (like ANOVA/ANCOVA), data visualization, and formula handling.
