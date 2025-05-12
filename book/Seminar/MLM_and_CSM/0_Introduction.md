@@ -21,7 +21,16 @@ Today we will start to work with models that are frequently used to measure chan
 The outline for today is: 
 
 * A working example
-* Repeated measures ANOVA with control group
+* Mixed ANOVA
 * Multilevel models
 * Change score models
+
+## Introduction Slide
+
+::::{raw} html
+<iframe src="../../../_static/Session2.pdf" width="100%" height="600px" style="border: none;">
+    <p style="text-align: center;">Your browser does not support embedding PDFs.<br>
+    <a href="../../../_static/Session2.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
+</iframe>
+::::
 

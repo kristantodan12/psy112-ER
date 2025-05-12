@@ -25,7 +25,7 @@ parts:
         - file: book/Seminar/MLM_and_CSM/1_Working_example
           title: Working Example
         - file: book/Seminar/MLM_and_CSM/2_Repeated_ANOVA
-          title: Repeated Measures ANOVA
+          title: Mixed ANOVA
         - file: book/Seminar/MLM_and_CSM/3_Multi-Level_Model_(MLM)_of_change
           title: Multi-Level Model (MLM) of Change
         - file: book/Seminar/MLM_and_CSM/4_Change_Score_Model
