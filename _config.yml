@@ -7,7 +7,7 @@ copyright: 2025
 
 # Do not execute notebooks
 execute:
-  execute_notebooks: "force"
+  execute_notebooks: "off"
 
 # Exclude specific notebooks from the build process
 #exclude_patterns:
