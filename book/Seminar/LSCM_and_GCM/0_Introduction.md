@@ -21,6 +21,7 @@ In our last session, we started to work with models that are useful when investi
 Here is the outline for today. 
 
 * Overview
+* Growth curve models 
 * Latent change score models
 * Multi-method/group/trait latent change score models
-* Growth curve models 
+
