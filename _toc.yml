@@ -35,7 +35,7 @@ parts:
         - file: book/Seminar/MLM_and_CSM/6_Change_Score_Model_with_More_Cov
           title: Change Score Model with More than One Covariate
     - file: book/Seminar/LSCM_and_GCM/0_Introduction
-      title: LSCM and GCM
+      title: LCSM and GCM
       sections:
         - file: book/Seminar/LSCM_and_GCM/1_Growth_curve_models
           title: Growth Curve Models (GCMs)
