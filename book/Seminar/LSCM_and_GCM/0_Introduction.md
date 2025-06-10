@@ -25,3 +25,11 @@ Here is the outline for today.
 * Latent change score models
 * Multi-method/group/trait latent change score models
 
+## Introduction Slide
+
+::::{raw} html
+<iframe src="../../../_static/Session3.pdf" width="100%" height="600px" style="border: none;" allowfullscreen>
+    <p style="text-align: center;">Your browser does not support embedding PDFs.<br>
+    <a href="../../../_static/Session3.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
+</iframe>
+::::

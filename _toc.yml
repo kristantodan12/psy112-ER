@@ -40,7 +40,7 @@ parts:
         - file: book/Seminar/LSCM_and_GCM/1_Growth_curve_models
           title: Growth Curve Models (GCMs)
         - file: book/Seminar/LSCM_and_GCM/2_Latent_change_score_models
-          title: Latent Change Score Models (LSCMs)
+          title: Latent Change Score Models (LCSMs)
         - file: book/Seminar/LSCM_and_GCM/3_Multi-method_latent_change_score_model
           title: Multi-Method/group/trait Latent Change Score Models
     - file: book/Seminar/EffectLiteR/0_Introduction
