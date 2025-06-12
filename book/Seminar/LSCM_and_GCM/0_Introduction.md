@@ -12,7 +12,7 @@ kernelspec:
   name: python3
 ---
 
-# LSCM and GCM
+# GCM and LCSM
 
 Dear students, 
 
