@@ -52,6 +52,8 @@ parts:
           title: EffectLiteR App
         - file: book/Seminar/EffectLiteR/3_Analysis_with_EffectLiteR
           title: Analysis with EffectLiteR
+        - file: book/Seminar/EffectLiteR/4_Appendix
+          title: Appendix
     - file: book/Seminar/PSM/0_Introduction
       title: PSM
       sections:
