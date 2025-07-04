@@ -61,15 +61,6 @@ parts:
           title: Data exploration
         - file: book/Seminar/PSM/2_Propensity_score_matching
           title: PSM
-    - file: book/Seminar/Meta_Analysis/0_Introduction
-      title: Meta-Analysis
-      sections:
-        - file: book/Seminar/Meta_Analysis/1_Working_example
-          title: Data exploration
-        - file: book/Seminar/Meta_Analysis/2_First_meta-analysis
-          title: Meta-Analysis
-        - file: book/Seminar/Meta_Analysis/3_Meta-analytic_methods_features
-          title: Meta-analytic methods and features
 - caption: Evaluation Research Lecture
   chapters:
     - file: book/Lecture/Introduction
