@@ -23,7 +23,7 @@ Enjoy!
 ## Introduction Slide
 
 ::::{raw} html
-<iframe src="../../../_static/Session1.pdf" width="100%" height="600px" style="border: none;">
+<iframe src="../../../_static/Psy112_Practice_Session1.pdf" width="100%" height="600px" style="border: none;">
     <p style="text-align: center;">Your browser does not support embedding PDFs.<br>
     <a href="../../../_static/Psy112_Practice_Session1.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
 </iframe>
