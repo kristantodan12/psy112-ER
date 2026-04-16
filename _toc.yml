@@ -4,7 +4,7 @@
 format: jb-book
 root: book/Misc/overview
 parts:
-- caption: Evaluation Research Seminar
+- caption: Seminar Content
   chapters:
     - file: book/Seminar/Introduction
       title: Seminar Overview
@@ -61,13 +61,46 @@ parts:
           title: Data exploration
         - file: book/Seminar/PSM/2_Propensity_score_matching
           title: PSM
-- caption: Evaluation Research Lecture
+- caption: Solutions
   chapters:
-    - file: book/Lecture/Introduction
-      title: Lecture Overview
-- caption: Additional Materials
-  chapters:
-    - file: book/Misc/Reading
-      title: Additional Reading Materials
-    - file: book/Solutions/solutions
-      title: Solutions
+    - file: book/Solutions/ANOVA_and_ANCOVA/1_1-way_ANOVA_between_sub
+      title: Solutions ANOVA and ANCOVA
+      sections:
+        - file: book/Solutions/ANOVA_and_ANCOVA/2_1-way_ANOVA_within_sub
+          title: One-Way ANOVA Within-Person
+        - file: book/Solutions/ANOVA_and_ANCOVA/3_2-way_ANOVA_between_sub
+          title: Two-Way ANOVA Between-Person
+        - file: book/Solutions/ANOVA_and_ANCOVA/4_ANCOVA
+          title: ANCOVA
+    - file: book/Solutions/MLM_and_CSM/1_Working_example
+      title: Solutions MLM and CSM
+      sections:
+        - file: book/Solutions/MLM_and_CSM/2_Repeated_ANOVA
+          title: Mixed ANOVA
+        - file: book/Solutions/MLM_and_CSM/3_Multi-Level_Model_(MLM)_of_change
+          title: Multi-Level Model (MLM) of Change
+        - file: book/Solutions/MLM_and_CSM/4_Change_Score_Model
+          title: Change Score Model (CSM)
+        - file: book/Solutions/MLM_and_CSM/5_Change_Score_Model_with_One_Cov
+          title: Change Score Model with One Covariate
+        - file: book/Solutions/MLM_and_CSM/6_Change_Score_Model_with_More_Cov
+          title: Change Score Model with More than One Covariate
+    - file: book/Solutions/LSCM_and_GCM/1_Growth_curve_models
+      title: Solutions GCM and LCSM
+      sections:
+        - file: book/Solutions/LSCM_and_GCM/2_Latent_change_score_models
+          title: Latent Change Score Models (LCSMs)
+        - file: book/Solutions/LSCM_and_GCM/3_Multi-method_latent_change_score_model
+          title: Multi-Method/group/trait Latent Change Score Models
+    - file: book/Solutions/EffectLiteR/1_Data_Exploration
+      title: Solutions EffectLiteR
+      sections:
+        - file: book/Solutions/EffectLiteR/2_EffectLiteR_app
+          title: EffectLiteR App
+        - file: book/Solutions/EffectLiteR/3_Analysis_with_EffectLiteR
+          title: Analysis with EffectLiteR
+    - file: book/Solutions/PSM/1_Working_example
+      title: Solutions PSM
+      sections:
+        - file: book/Solutions/PSM/2_Propensity_score_matching
+          title: PSM
