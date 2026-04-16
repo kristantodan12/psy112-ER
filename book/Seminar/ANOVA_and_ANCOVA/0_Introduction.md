@@ -25,7 +25,7 @@ Enjoy!
 ::::{raw} html
 <iframe src="../../../_static/Session1.pdf" width="100%" height="600px" style="border: none;">
     <p style="text-align: center;">Your browser does not support embedding PDFs.<br>
-    <a href="../../../_static/Session1.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
+    <a href="../../../_static/Psy112_Practice_Session1.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
 </iframe>
 ::::
 
@@ -43,11 +43,11 @@ We need to install a few additional packages specifically for this course, which
     * _macOS/Linux:_ Terminal
 
 2.  **Activate your psy126 Environment:**
-    *(Replace `psy126_env` below if you named your environment differently)*
+    *(Replace `psy126` below if you named your environment differently)*
     ```bash
-    conda activate psy126_env
+    conda activate psy126
     ```
-    Your terminal prompt should now show the environment name in parentheses, like `(psy126_env) C:\Users\...`.
+    Your terminal prompt should now show the environment name in parentheses, like `(psy126) C:\Users\...`.
 
 3.  **Install Required Packages:**
     Run the following command using `pip` (the Python package installer) within your activated environment. This will install `seaborn` (for plotting), `pingouin` (for stats), `statsmodels` (for stats models/ANOVA), and `patsy` (for formulas):
