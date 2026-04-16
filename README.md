@@ -6,7 +6,8 @@
 
 ## Online usage (recommended)
 
-Course materials for the psy112-Evaluation Research seminar of the Neurocognitive Psychology Master's course at the University of Oldenburg. The content should primarily be accessed from the online book: [![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://kristantodan12.github.io/psy112-ER/)
+Course materials for the psy112-Evaluation Research seminar of the Neurocognitive Psychology Master's course at the University of Oldenburg. The content should primarily be accessed from the online book: [![Jupyter Book Badge](https://raw.githubusercontent.com/jupyter-book/jupyter-book/next/docs/media/images/badge.svg)](https://kristantodan12.github.io/psy112-ER/)
+
 
 ## Local usage
 
