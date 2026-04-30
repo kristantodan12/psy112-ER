@@ -14,8 +14,6 @@ kernelspec:
 
 # MLM and CSM
 
-Dear students, 
-
 Today we will start to work with models that are frequently used to measure change. Note that some of the methods reviewed in this tutorial will involve what you learned in the previous tutorial and in the previous semester, for example multilevel and structural equation modeling (SEM). 
 
 The outline for today is: 
