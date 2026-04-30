@@ -14,8 +14,6 @@ kernelspec:
 
 # GCM and LCSM
 
-Dear students, 
-
 In our last session, we started to work with models that are useful when investigating change. Specifically, we covered **repeated measures ANOVA** and two great alternative options that overcome the limitations of ANOVA and allow researchers to answer much more interesting and complex questions. These alternatives were multilevel models (**MLMs**) and change score models (**CSMs**). In this tutorial, you will learn how to implement more sophisticated CSMs and growth curve models (**GCMs**).
 
 Here is the outline for today. 
