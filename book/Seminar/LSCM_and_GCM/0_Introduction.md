@@ -26,7 +26,7 @@ Here is the outline for today.
 ## Introduction Slide
 
 ::::{raw} html
-<iframe src="../../../_static/Session3.pdf" width="100%" height="600px" style="border: none;" allowfullscreen>
+<iframe src="../../../_static/Psy112_Practice_Session3.pdf" width="100%" height="600px" style="border: none;" allowfullscreen>
     <p style="text-align: center;">Your browser does not support embedding PDFs.<br>
     <a href="../../../_static/Session3.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
 </iframe>
