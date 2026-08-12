@@ -45,10 +45,16 @@ jobs:
           sudo apt-get clean
           docker system prune -af || true
 
-      - name: Install dependencies
+      # This book executes nothing: every notebook carries `execute: {skip: true}`
+      # and no markdown page has an executable {code-cell}, so the build is a pure
+      # render of the stored outputs. Installing the scientific stack here would
+      # only slow CI down -- and rpy2 cannot even be built without R on the runner.
+      # The full environment students need in order to *run* the notebooks lives
+      # in requirements.txt.
+      - name: Install Jupyter Book
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install "jupyter-book>=2.1.6"
 
       - name: Build the book
         run: |

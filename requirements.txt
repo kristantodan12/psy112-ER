@@ -1,6 +1,8 @@
-# Build toolchain (Jupyter Book 2 is powered by mystmd)
+# Environment for RUNNING the notebooks locally.
+#   pip install -r requirements.txt
+
+# Book tooling (only needed if you want to build/preview locally)
 jupyter-book>=2.1.6
-jupyter-server          # needed by `jupyter book build --execute`
 ipykernel
 
 # Scientific stack used by the notebooks
@@ -13,7 +15,9 @@ statsmodels
 pingouin
 semopy
 
-# Bridge to the R packages used in some sessions (EffectLiteR, metafor, ...)
+# Bridge to the R packages used in some sessions (EffectLiteR, metafor, ...).
+# Needs a working R installation on your machine; on Python versions without a
+# prebuilt wheel, pip compiles it and R must be on the PATH.
 rpy2
 
 # Interactive teaching widgets

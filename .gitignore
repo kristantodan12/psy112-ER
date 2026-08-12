@@ -1,6 +1,11 @@
-# Files
+# Python
 *.pyc
+__pycache__/
 
-# Folders
+# Jupyter Book / MyST build artefacts
 _build/
+node_modules/
+
+# Environments
 .conda/
+.venv/
