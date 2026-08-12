@@ -11,7 +11,7 @@ Here is the outline for today.
 
 ## Introduction Slide
 
-:::{iframe} ../../../_static/Psy112_Practice_Session3.pdf
+:::{iframe} ../../../../_static/Psy112_Practice_Session3.pdf
 :width: 100%
 :title: Introduction slides
 

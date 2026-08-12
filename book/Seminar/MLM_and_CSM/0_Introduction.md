@@ -11,7 +11,7 @@ The outline for today is:
 
 ## Introduction Slide
 
-:::{iframe} ../../../_static/Session2.pdf
+:::{iframe} ../../../../_static/Session2.pdf
 :width: 100%
 :title: Introduction slides
 

@@ -5,7 +5,7 @@ In this first session of the practical part of the evaluation research seminar, 
 
 ## Introduction Slide
 
-:::{iframe} ../../../_static/Psy112_Practice_Session1.pdf
+:::{iframe} ../../../../_static/Psy112_Practice_Session1.pdf
 :width: 100%
 :title: Introduction slides
 
