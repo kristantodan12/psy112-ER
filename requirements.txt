@@ -1,15 +1,22 @@
-jupyter-book==1.0.3
+# Build toolchain (Jupyter Book 2 is powered by mystmd)
+jupyter-book>=2.1.6
+jupyter-server          # needed by `jupyter book build --execute`
+ipykernel
+
+# Scientific stack used by the notebooks
 numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
+statsmodels
+pingouin
+semopy
+
+# Bridge to the R packages used in some sessions (EffectLiteR, metafor, ...)
+rpy2
+
+# Interactive teaching widgets
 jupyterquiz
 jupytercards
 ipywidgets
-rpy2
-pingouin
-statsmodels
-semopy
-ipykernel
-

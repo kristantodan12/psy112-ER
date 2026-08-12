@@ -1,17 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.11.5
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
----
-
 # ANOVA and ANCOVA
 
 In this first session of the practical part of the evaluation research seminar, we will cover the basics of analyzing data collected using various experimental designs. We will apply analysis of variance (ANOVA) and analysis of covariance (ANCOVA) models. You should already be familiar with these methods from your Bachelor studies. We recap the basic principles of these models in order to reinforce the foundation for understanding why these models are, in many cases, not appropriate for analyzing data collected in applied experimental research. We aim to summarize four types of models and this may be too much for the class. We will go slowly and the chapters we do not manage to cover will remain your homework. Please note that it is crucial to review these topics in order to be able to follow the new topics of the seminar.
@@ -19,12 +5,12 @@ In this first session of the practical part of the evaluation research seminar, 
 
 ## Introduction Slide
 
-::::{raw} html
-<iframe src="../../../_static/Psy112_Practice_Session1.pdf" width="100%" height="600px" style="border: none;">
-    <p style="text-align: center;">Your browser does not support embedding PDFs.<br>
-    <a href="../../../_static/Psy112_Practice_Session1.pdf" target="_blank" rel="noopener noreferrer">Download the PDF instead</a>.</p>
-</iframe>
-::::
+:::{iframe} ../../../_static/Psy112_Practice_Session1.pdf
+:width: 100%
+:title: Introduction slides
+
+Introduction slides. [Download the PDF](../../../_static/Psy112_Practice_Session1.pdf) if the embedded viewer does not load.
+:::
 
 ## Environment Setup
 

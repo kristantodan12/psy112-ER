@@ -1,0 +1,128 @@
+# Jupyter Book 2 configuration
+# Reference: https://mystmd.org/guide/frontmatter
+version: 1
+
+project:
+  id: psy112-er-evaluation-research
+  title: PSY112 - Evaluation Research
+  description: >-
+    Course materials for the psy112 Evaluation Research seminar of the
+    Neurocognitive Psychology Master's programme at Carl von Ossietzky
+    Universität Oldenburg.
+  copyright: "2026"
+  authors:
+    - name: Daniel Kristanto
+    - name: Micha Burkhardt
+    - name: Cassie Short
+    - name: Juan Quinones
+    - name: Andrea Hildebrandt
+  github: https://github.com/kristantodan12/psy112-ER
+
+  # Enables the "launch in Jupyter" menu on notebook pages
+  jupyter: true
+
+  # Session slide PDFs are embedded from _static/ via {iframe}; MyST does not
+  # rewrite iframe URLs, so the folder has to be copied verbatim.
+  static_files:
+    - _static
+
+  exclude:
+    - README.md
+    - CHANGELOG.md
+
+  # Hover definitions for recurring acronyms
+  abbreviations:
+    ANOVA: Analysis of Variance
+    ANCOVA: Analysis of Covariance
+    MLM: Multi-Level Model
+    CSM: Change Score Model
+    GCM: Growth Curve Model
+    LCSM: Latent Change Score Model
+    PSM: Propensity Score Matching
+    SEM: Structural Equation Modelling
+    ATE: Average Treatment Effect
+    ICC: Intraclass Correlation Coefficient
+    ML: Maximum Likelihood
+    RMSEA: Root Mean Square Error of Approximation
+    CFI: Comparative Fit Index
+    TLI: Tucker-Lewis Index
+    AIC: Akaike Information Criterion
+    BIC: Bayesian Information Criterion
+
+  toc:
+    - file: book/Misc/overview.md
+
+    - file: book/Seminar/Introduction.md
+      title: Seminar Overview
+
+    - file: book/Seminar/ANOVA_and_ANCOVA/0_Introduction.md
+      title: ANOVA and ANCOVA
+      children:
+        - file: book/Seminar/ANOVA_and_ANCOVA/1_1-way_ANOVA_between_sub.ipynb
+          title: One-Way ANOVA Between-Person
+        - file: book/Seminar/ANOVA_and_ANCOVA/2_1-way_ANOVA_within_sub.ipynb
+          title: One-Way ANOVA Within-Person
+        - file: book/Seminar/ANOVA_and_ANCOVA/3_2-way_ANOVA_between_sub.ipynb
+          title: Two-Way ANOVA Between-Person
+        - file: book/Seminar/ANOVA_and_ANCOVA/4_ANCOVA.ipynb
+          title: ANCOVA
+
+    - file: book/Seminar/MLM_and_CSM/0_Introduction.md
+      title: MLM and CSM
+      children:
+        - file: book/Seminar/MLM_and_CSM/1_Working_example.ipynb
+          title: Working Example
+        - file: book/Seminar/MLM_and_CSM/2_Repeated_ANOVA.ipynb
+          title: Mixed ANOVA
+        - file: book/Seminar/MLM_and_CSM/3_Multi-Level_Model_(MLM)_of_change.ipynb
+          title: Multi-Level Model (MLM) of Change
+        - file: book/Seminar/MLM_and_CSM/4_Change_Score_Model.ipynb
+          title: Change Score Model (CSM)
+        - file: book/Seminar/MLM_and_CSM/5_Change_Score_Model_with_One_Cov.ipynb
+          title: Change Score Model with One Covariate
+        - file: book/Seminar/MLM_and_CSM/6_Change_Score_Model_with_More_Cov.ipynb
+          title: Change Score Model with More than One Covariate
+
+    - file: book/Seminar/LSCM_and_GCM/0_Introduction.md
+      title: GCM and LCSM
+      children:
+        - file: book/Seminar/LSCM_and_GCM/1_Growth_curve_models.ipynb
+          title: Growth Curve Models (GCMs)
+        - file: book/Seminar/LSCM_and_GCM/2_Latent_change_score_models.ipynb
+          title: Latent Change Score Models (LCSMs)
+        - file: book/Seminar/LSCM_and_GCM/3_Multi-method_latent_change_score_model.ipynb
+          title: Multi-Method/group/trait Latent Change Score Models
+
+    - file: book/Seminar/EffectLiteR/0_Introduction.md
+      title: EffectLiteR
+      children:
+        - file: book/Seminar/EffectLiteR/1_Data_Exploration.ipynb
+          title: Data Exploration
+        - file: book/Seminar/EffectLiteR/2_EffectLiteR_app.ipynb
+          title: EffectLiteR App
+        - file: book/Seminar/EffectLiteR/3_Analysis_with_EffectLiteR.ipynb
+          title: Analysis with EffectLiteR
+        - file: book/Seminar/EffectLiteR/4_Appendix.ipynb
+          title: Appendix
+
+    - file: book/Seminar/PSM/0_Introduction.md
+      title: PSM
+      children:
+        - file: book/Seminar/PSM/1_Working_example.ipynb
+          title: Data exploration
+        - file: book/Seminar/PSM/2_Propensity_score_matching.ipynb
+          title: PSM
+
+site:
+  template: book-theme
+  title: PSY112 - Evaluation Research
+  options:
+    logo: logo.png
+    logo_dark: logo.png
+    favicon: logo.png
+    style: _static/custom.css
+    # Keep the folder structure in the URLs. Required here because several
+    # sessions share filenames such as "0_Introduction" and "1_Working_example".
+    folders: true
+    outline_maxdepth: 3
+    hide_authors: true
